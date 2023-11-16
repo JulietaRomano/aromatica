@@ -1,0 +1,489 @@
+/*Botones*/
+
+.btn-principal{
+	background-color:#ce1212;
+	box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+	font-weight: 700;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 12px 36px;
+	border-radius: 50px;
+	transition: 0.5s;
+	padding: 15px 36px;
+}
+.btn-principal a{
+	color: white;
+}
+.btn-principal:hover{
+	background-color:rgba(206, 18, 18, 0.8);
+	box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+}
+
+.btn-carrito:hover{
+	color: white;
+}
+
+.btn-carrito{
+	background-color: red;
+	color: white;
+	padding: 6px 30px;
+	border-radius:5px;
+}
+.btn-carrito:hover{
+	color: white;
+	background-color: rgb(251, 27, 27);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.carrito_li{
+	list-style: none;
+	display: flex;
+}
+
+
+/* ------ Separador -------*/
+.separador{
+	background-color: rgba(255, 0, 0, 0);
+}
+
+
+
+/* ------ Menu -------*/
+.header{
+	background-color: rgb(255, 255, 255);
+	border: none;
+}
+.sticked{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+/*Carrito*/ 
+.submenu {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	background-color: black;
+	border-radius: 100px;
+	width: 35px;
+	height: 35px;
+}
+
+.submenu #carrito{
+	display: none;
+	border: solid 1px rgb(186, 186, 186);
+	border-radius: 5px;
+}
+.submenu:hover #carrito{
+	display: block;
+	position: absolute;
+	right:0;
+
+	top:100%;
+	z-index: 1;
+	background-color: white;
+	padding: 20px;
+	min-height: 400px;
+	min-width: 300px;
+}
+/* Item Carrito */
+.carrito_menu{
+	background-color:#ce1212;
+	text-align: center;
+	animation: 1.5s ease 0s alternate beat;
+}
+.fa-cart-shopping{
+	color: white;
+}
+
+@keyframes beat {
+	0%, 50%, 100% { transform: scale(1.2, 1.2); }
+	30%, 80% { transform: scale(0.92, 0.95); }
+}
+
+
+
+
+/*-------PORTADAS-------*/
+
+/*Home*/
+
+.portada{
+	padding-top: 13rem;
+	height: 110vh;
+	background-image: url(https://espressoexpert.net/wp-content/uploads/2019/08/how-much-coffee-is-too-much-for-a-teenager.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position:center;
+	animation: movimiento2 2s linear alternate;
+}
+
+
+
+.portada .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+}
+
+.portada::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../img/team-shape.svg) no-repeat center bottom;
+	  background-size: auto;
+	background-size: contain;
+	z-index: 1;
+  }
+
+/*Tienda Virtual*/
+  
+
+.portada_tienda{
+	background-image: url('../img/portadas/portada_productos.png');
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	
+	animation: movimiento2 2s  linear alternate;
+}
+
+@keyframes movimiento2{
+    from{
+        background-position: top right ;
+    }
+}
+.portada_tienda-caja{
+	color: white;
+}
+.portada_tienda-caja h2{
+	font-family: "Amatic SC", sans-serif;
+	font-size:6rem;
+	font-weight: 600;
+	margin-right: 2rem;
+}
+.portada_tienda-caja hr{
+	border: solid 2px white;
+}
+.portada_tienda-caja p{
+	font-size:1.8rem;
+	font-weight: 500;
+	color: #e1e1e1;
+}
+
+.separador_tienda{
+	position: absolute;
+	bottom: 0px;
+}
+
+
+
+
+.button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+.button:hover{
+	cursor: pointer;
+}
+
+
+.boton_primario{
+	background-color: #ce1212;
+	padding: .5rem 1.5rem;
+	border-radius: 1rem;
+	color: white;
+}
+
+
+/*Por que elegirnos seccion*/
+.elegirnos_section{
+	background-color: #e1d4c6;
+}
+
+/*Galería seccion*/
+
+.galeria_section{
+	padding-top: 6rem;
+}
+
+/*Beneficios seccion*/
+.beneficios_section{
+	padding-top:0;
+	padding-bottom: 10rem;
+}
+
+
+
+.iconos_info{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	background-color: #ce1212;
+	margin-right: 16px;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+}
+.iconos_info-iconografia{
+	color: white;
+}
+
+/*Productos*/
+.productoItem{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
+	border-radius: 15px;
+	padding: 1rem 2rem;
+	margin-bottom: 2rem;
+	font-size: .9rem;
+	text-align: center;
+	color: #7b7b7b;
+}
+.producto_img{
+	width: auto;
+	height: 300px;
+}
+.product_name{
+	font-family:  "Amatic SC", sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #3b3b3b;
+}
+.product_precio{
+	color: #222222;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+
+
+.menu_seccion{
+	padding: 100px 20px;
+}
+
+.list-group-item-heading{
+	font-size: 1rem;
+} 
+
+.list-group-item-text{
+	font-size: 0rem;
+}
+.list-group-item{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+/*-- Productos Destacados sección  ---*/
+.destacados_container{
+	padding: 2rem 0;
+}
+
+.destacados_tarjeta-container{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+.destacados_tarjeta{
+  display:flex;
+  flex-direction:column;
+  width:400px;
+  margin-bottom:60px;
+}
+.destacados_tarjeta>div{
+  box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
+}
+.destacados-image{
+  width:400px;
+  height:250px;
+}
+.destacados-image>img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:bottom;
+}
+.destacados-text{
+  margin:-30px auto;
+  margin-bottom:-50px;
+  height:300px;
+  width:300px;
+  background-color:#ffffff;
+  color:#000000;
+  padding:20px;
+}
+.destacados-meal-type{
+  font-style:italic;
+}
+.destacados-title{
+  font-size:2rem;
+  margin-bottom:20px;
+  margin-top:5px;
+font-family: var(--font-secondary);
+}
+.destacados-body{
+  font-size:1.1rem;
+}
+.destacados-price{
+	text-align: center;
+  width:100px;
+  height:100px;
+  background-color:#970C0A;
+  border-radius: 100%;
+  color:#fff;
+  margin-left:auto;
+  font-size:.7rem;
+  font-weight: 600;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+
+
+
+/*NO SE SABE*/
+
+.destacados_item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.destacados_item-img{
+	width: 80%;
+
+}
+
+
+/*-------Checkout----*/
+.checkout_main{
+	background-color: #fbfafa;
+}
+
+
+.caja_terminando h2{
+	font-family: "Amatic SC", sans-serif;
+	font-size: 3rem;
+	font-weight: 900;
+}
+.aguardando{
+	padding: .5rem 3rem;
+	display: inline-block;
+	color: rgb(212, 148, 30);
+	background-color: rgb(255, 240, 213);
+	border-radius: 10px;
+	margin-top: 3rem;
+}
+
+.caja_codigo{
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
+	text-align: center;
+	font-weight: 900;
+	color: #4a4a4a;
+
+}
+
+.caja_codigo img{
+	width: 45%;
+}
+.span{
+	color:#ce1212;
+}
+
+.pasos_cajas{
+	text-align: left;
+}
+
+.pasos_pago-div{
+background-color: #ce1212;
+color: white;
+width: 40px;
+height: 35px;
+border-radius: 100px;
+margin-right: 1rem;
+}
+
+/*Testimoniales*/
+.testimonials{
+	padding-bottom: 2rem;
+}
+
+
+/*-------ABOUT--------*/
+.about{
+	padding-top: 10rem;
+}
+
+.about-img{
+	background-image: url('https://cdn-3.expansion.mx/dims4/default/3a43bc7/2147483647/strip/true/crop/5760x3840+0+0/resize/1800x1200!/format/webp/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fd3%2Fa1%2Fca36469448dea0b9dde50db5451f%2Fbeneficios-cafe.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+/*---CONTACTO---*/
+.contact{
+	padding-top: 10rem;
+}
+
+.book-a-table {
+	padding-bottom: 5rem;
+}
+
+.contact{
+	padding-top: 0;
+}
+.contacto_section{
+	padding-top: 10rem;
+	padding-bottom: 5rem;
+}
+
+@media (max-width:800px) {
+	.portada_tienda{
+		background-image: url('../img/portadas/portada_productos.png');
+		background-position: center;
+		height: 60vh;
+	}
+	.portada::after {
+		display: none;
+	  }
+
+	/*Home*/
+
+.portada{
+	padding-top: 10rem;
+	height: 80vh;
+	animation: movimiento2 2s linear alternate;
+}
+
+
+
+.portada::after {
+	display: none;
+  }
+}

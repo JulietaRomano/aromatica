@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Aromática</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/jquery-smartcart/dist/css/smart_cart.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Código de la plantilla -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Mi css-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+  </head>
+  <body>
+
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+          <h1>Aromática<span>.</span></h1>
+        </a>
+        <!--Menú-->
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tienda.html">Tienda Virtual</a></li>
+            <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contactános</a></li>
+            
+          </ul>
+        </nav>
+        
+        <!--Carrito-->
+        <li class="dropdown submenu" id="icono_carrito">
+          <i class="fa-solid fa-cart-shopping " ></i>
+          <div id="carrito"></div>
+        </li>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+  
+      </div>
+    </header>
+
+
+    <!-- ======= Portada ======= -->
+
+    <div class="portada_tienda">
+      <div class="portada_tienda-caja">
+        <h2>Cafés de especialidad</h2>
+        <hr>
+        <p>Cosechas del mundo</p>
+      </div>
+
+         <!-- Separador -->
+      <div class="separador_tienda">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,0L48,26.7C96,53,192,107,288,138.7C384,171,480,181,576,154.7C672,128,768,64,864,69.3C960,75,1056,149,1152,181.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      </div>
+    </div> 
+
+     <!-- ======= Main ======= -->
+    <main>
+
+      <!-- ======= Productos Section ======= -->
+      <section id="menu" class="menu menu_seccion">
+        <div class="container" data-aos="fade-up">
+    
+          <!--Titulo-->
+          <div class="section-header">
+            <h2>Productos</h2>
+            <p>Chequea nuestros <span> Productos</span></p>
+          </div>
+
+          <!--Separadores de secciones-->
+          <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+  
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+                <h4>Café</h4>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+                <h4>Pastelería</h4>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+                <h4>Cafeteras</h4>
+              </a>
+            </li>
+                
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+                <h4>Bazar</h4>
+              </a>
+          </ul>
+
+          <!--------Productos-------->
+
+          <!--Cafe de especialidad-->
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+  
+            <div class="tab-pane fade active show" id="menu-starters">
+
+              <div class="tab-header text-center">
+                <p>Menu</p>
+                <h3>Café de especialidad</h3>
+              </div>
+  
+              <div class="row"> 
+                <div class="col-md-12 col-sm-12">
+                  <div id="catalogoCafe" class="row"></div>
+                </div>
+              </div>
+
+            </div>
+          </div> 
+            
+          <!--Bazar-->
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+          
+            <div class="tab-pane fade" id="menu-breakfast">
+    
+              <div class="tab-header text-center">
+                <p>Menu</p>
+                <h3>Bazar</h3>
+              </div>
+
+              <div class="row"> 
+                <div class="col-md-12 col-sm-12">
+                  <div id="catalogoBazar" class="row"></div>
+                </div>
+              </div>                 
+
+            </div>
+          </div>
+
+          <!--Pastelería-->
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+            <div class="tab-pane fade" id="menu-lunch">
+      
+              <div class="tab-header text-center">
+                <p>Menu</p>
+                <h3>Pastelería</h3>
+              </div>
+
+              <div class="row"> 
+                <div class="col-md-12 col-sm-12">
+                  <div id="catalogoPasteleria" class="row"></div>
+                </div>
+              </div>   
+
+            </div>
+          </div>
+
+
+          <!--Productos Cafeteras-->
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+            <div class="tab-pane fade" id="menu-dinner">
+      
+              <div class="tab-header text-center">
+                <p>Menu</p>
+                <h3>Cafeteras</h3>
+              </div>
+
+              <div class="row"> 
+                <div class="col-md-12 col-sm-12">
+                  <div id="catalogoCafeteras" class="row"></div>
+                </div>
+              </div>  
+              
+            </div>
+          </div>
+
+        </div>
+          
+      </section>
+
+      <!--Separador-->
+      <div class="separador">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e1d4c6" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,117.3C672,139,768,213,864,229.3C960,245,1056,203,1152,170.7C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      </div>
+
+
+      <!-- ======= Reconocimientos ======= -->
+      <section id="testimonials" class="testimonials section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <h2>Reconocimientos</h2>
+            <p>Comunidad <span>Aromática</span></p>
+          </div>
+
+          <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+              <!-- Testimonio 1 -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-6">
+                      <div class="testimonial-content">
+                        <p>
+                          <i class="bi bi-quote quote-icon-left"></i>
+                          ¡No puedo empezar mi día sin una taza de este café increíble! La mezcla perfecta de sabores intensos y suaves crea una experiencia única que me ayuda a despertar y enfrentar el día con energía.
+                          <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                        <h3>Martín Dominguez</h3>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="Foto de un cliente hombre">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonio 2 -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-6">
+                      <div class="testimonial-content">
+                        <p>
+                          <i class="bi bi-quote quote-icon-left"></i>
+                          Como amante del café, siempre estoy en la búsqueda de sabores auténticos y notas distintivas. Esta marca no solo cumple, sino que supera mis expectativas. Cada grano parece haber sido seleccionado con cuidado, y el tostado es simplemente perfecto.
+                          <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                        <h3>Camila Castillo</h3>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="Foto de un cliente mujer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonio 3 -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-6">
+                      <div class="testimonial-content">
+                        <p>
+                          <i class="bi bi-quote quote-icon-left"></i>
+                          Este café no es solo una bebida; es una experiencia que eleva mi espíritu cada vez que lo disfruto. La primera vez que probé esta marca, supe que era algo especial. ¡Definitivamente, una joya en el mundo del café!
+                          <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                        <h3>Sara Ferreyra</h3>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="Foto de un cliente mujer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonio 4 -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-6">
+                      <div class="testimonial-content">
+                        <p>
+                          <i class="bi bi-quote quote-icon-left"></i>
+                          El sabor suave pero robusto me envuelve como una manta cálida, y cada sorbo es como un momento de meditación en medio del ajetreo diario. No importa si estoy trabajando en la oficina o relajándome en casa, este café siempre me transporta a un lugar de calma y satisfacción. 
+                          <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                        <h3>Juan Lopez</h3>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="Foto de un cliente hombre">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </section>
+      
+
+    </main>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-geo-alt icon"></i>
+            <div>
+              <h4>Dirección</h4>
+              <p>
+                Av. Libertador 2345 <br>
+                CABA, Buenos Aires<br>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <i class="bi bi-telephone icon"></i>
+            <div>
+              <h4>Contáctanos</h4>
+              <p>
+                <strong>Telefono:</strong> 11 5589 55488<br>
+                <strong>Email:</strong> aromatica@info.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <i class="bi bi-clock icon"></i>
+            <div>
+              <h4>Horarios</h4>
+              <p>
+                <strong>Lunes a Sábados: 9AM</strong> - 20PM<br>
+                Domingos: 10 AM - 20PM
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Nuestras redes</h4>
+            <div class="social-links d-flex">
+              <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Aromática</span></strong>. Todos los derechos reservados
+        </div>
+        <div class="credits">
+          Julieta Romano - Programación/ Desarrollo - Dgd 1a - 2023
+        </div>
+      </div>
+
+    </footer>
+
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="https://kit.fontawesome.com/8514b8ee83.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/jquery-smartcart/dist/js/jquery.smartCart.min.js"></script>
+
+    
+     <!-- Plantilla JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!--Mi código JS-->
+    <script src="assets/js/array.js"></script>
+    <script src="assets/js/script.js"></script>
+
+  </body>
+
+</html>
